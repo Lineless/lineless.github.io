@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
 		<style>
 			@font-face {
    				font-family: shabby;
    				src: url(./res/fonts/Anothershabby_trial.ttf);
 			}
 
-			html {
+			html body{
 				background: url(./res/img/table.jpg) no-repeat center center fixed;
 				-webkit-background-size: 100% auto;
 				-moz-background-size: 100% auto;
 				-ms-background-size: 100% auto;
 				-o-background-size: 100% auto;
 				background-size: 100% auto;
+				max-width: 100%;
+				overflow-x: hidden;
 			}
 
 			h6 {
 				margin-top: 10px;
-				font-size: 300px;
+				font-size: 250px;
 				font-family: shabby;
+				text-align: center;
+				color: #585858;
 			}
+
+			.extendfull, .extendleft, .extendright
+			{
+				position: relative;
+				display: inline;
+				float: left;
+				width: 100%;
+				margin-left: -3000px;
+				margin-right; -3000px;
+			}
+
+			.extendfull, .extendleft
+			{
+				margin-left: -3000px;
+				padding-left: 3000px;
+			}
+
+			.extendfull, .extendright
+			{
+				margin-right: -3000px;
+				padding-right: 3000px;
+			}
+
+			.descript
+			{
+				padding-top: 3em;
+				padding-bottom: 3em;
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+
 		</style>
 	</head>
 	<body>
-		<center>
-			<h6>Lineless</h6>
-		</center>
+		<h6>Lineless</h6>
+		<br>
+		<br>
+		<div class="extendfull" style="background:white;"><div class="descript">
+			Placeholder text
+		</div></div>
 	</body>
 </html>
